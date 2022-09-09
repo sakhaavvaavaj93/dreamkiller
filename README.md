@@ -5,7 +5,7 @@ Originally a marie fork - Yor has evolved further and was built to be more usefu
 
 Can be found on telegram as [Stenzle](https://t.me/Stenzle_MariaGbot).
 
-The Support group can be reached out to at [StrawHat Support](https://t.me/StrawHatTeam), where you can ask for help setting up your bot, discover/request new features, report bugs, and stay in the loop whenever a new update is available.
+The Support group can be reached out to at [stenzle Support](https://t.me/STENZLE_BAN_LOGS), where you can ask for help setting up your bot, discover/request new features, report bugs, and stay in the loop whenever a new update is available.
 
 *Yor is free and open source software and supports the right to read, distribute and repair.*
 
