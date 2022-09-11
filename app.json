@@ -152,7 +152,12 @@
       "description": "Make your bot talk using Intellivoid's chatbot API, get your key from https://coffeehouse.intellivoid.net/",
          "required": false,
          "value": ""
-   },      
+      },  
+      "START_IMG": {
+       "description": "image that seems when hit start",
+       "required": false,
+       "value": "https://te.legra.ph/file/ba19e43d1377d356a0a18.jpg"
+      },
       "BAN_STICKER": {
          "description": "ID of the sticker you want to use when banning people.",
          "required": false,
