@@ -79,7 +79,7 @@ def get_readable_time(seconds: int) -> str:
 
     return ping_time
 
-
+START_IMG = "https://te.legra.ph/file/ba19e43d1377d356a0a18.jpg"
 PM_START_TEXT = """
 *Hey* {} 🌺
 
@@ -236,9 +236,10 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_sticker(
-                "CAACAgUAAxkBAAJYsmLWRvm70cE-mmxSNCovEf4v1ueJAAIcCAACbMK4VuL4EmZEkq8WKQQ"
+                "CAACAgUAAxkBAAKVCWMdzqEKVIipnSYQUDtiUeOdQcHWAAJABQACLacoVKaEYQABxD4l7SkE"
             )
-            update.effective_message.reply_text(
+            update.effective_message.reply_photo(
+                START_IMG,
                 PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
