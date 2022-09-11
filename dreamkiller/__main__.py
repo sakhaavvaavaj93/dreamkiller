@@ -79,9 +79,7 @@ def get_readable_time(seconds: int) -> str:
     return ping_time
 
 
-PM_START_TEXT = """ ──────「 Yor Forger [🌺](http://telegra.ph/file/f5491e102e7563816aedf.mp4)」
-⏤‌★𝐊𝐊 𝐀𝐑𝐌𝐘 𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋ꗄ➺
-
+PM_START_TEXT = """★𝐊𝐊 𝐀𝐑𝐌𝐘 𝐎𝐅𝐅𝐈𝐂𝐈𝐀𝐋ꗄ➺
 This is a Social Media Friendship Gang with Ultra strong Bond of Lots of Love💞 . We always Try to bring forward the New ideas to  front of the members . We consider our members all are our Family Members . 
 
          ☬C‌o‌n‌s‌t‌a‌n‌t‌ A‌d‌m‌i‌n‌s‌☬
@@ -241,8 +239,8 @@ def start(update: Update, context: CallbackContext):
 
         else:
             image = random.choice(VEGETA_IMG)
-            update.effective_message.reply_text(
-                PM_START_TEXT.format(image),
+            update.effective_message.reply(
+                PM_START_TEXT.format(text),
                 reply_markup=InlineKeyboardMarkup(buttons),
                 parse_mode=ParseMode.MARKDOWN,
                 timeout=60,
