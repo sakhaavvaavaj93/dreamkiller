@@ -50,6 +50,7 @@ class Config(object):
     WORKERS = 8  # Number of subthreads to use. Set as number of threads your processor uses
     BL_CHATS = []  # List of groups that you want blacklisted.
     SPAMMERS = None
+    START_IMG = "https://te.legra.ph/file/ba19e43d1377d356a0a18.jpg"
 
 
 class Production(Config):
