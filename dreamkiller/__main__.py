@@ -876,7 +876,7 @@ def main():
 
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
-    dispatcher.add_handler(Music_handler)
+    dispatcher.add_handler(Music_callback_handler)
     dispatcher.add_handler(test_handler)
     dispatcher.add_handler(start_handler)
     dispatcher.add_handler(help_handler)
