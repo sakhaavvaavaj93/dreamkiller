@@ -30,7 +30,7 @@ fontTools
 gtts
 tswift
 pytz
-PyYAML>=5.3.1
+PyYAML>=6.0.11 
 redis
 html2text
 pythonping
