@@ -80,8 +80,28 @@ def get_readable_time(seconds: int) -> str:
 
 START_IMG = "https://te.legra.ph/file/ba19e43d1377d356a0a18.jpg"
 PM_START_TEXT = """
-*Hey* {} 💃💃
-*๏ Click on the help button to get information about my modules & commands.*
+⏤‌★KK Army Officialꗄ➺
+
+Holaa {} 
+🕊️Haven't You even heard about ⏤‌★KK Army Officialꗄ➺?
+If haven't heard just Look here. KkArmy is a team Social Media Friendship Gang of StrongBond with lot of Love and Entertainment. 
+
+⏤‌★About Usꗄ➺
+We always Tries to bring Forward a lot of ideas with Tottaly positive and all the members are Honourably considered as One of our Family Member.
+
+☬A‌d‌m‌i‌n‌s‌ KK Army☬
+ 💻  @ANIYATHIKUTTIEEDE_CHECHIKUTTI
+ 👹  @FULLY_CRUAL_MIND
+ 🖥  @JinnSulthan or 🕊️ @Jinn_Sulthan 
+ 🎭  @im_casanova 
+ 🕺  @KottayamkunjachanM88 
+ 💃🏾  @Kappusz
+ 🥷🏾  @L_The_Fallen_Angel
+ 
+ ☬Important (Don't Forget)☬
+Also We have both Channel and Group For Reporting Complaints about Abusing/Harrsment even though whatever issues Facing on Social Media. 
+The channels and Groups of us are Connected with CyberDome, KeralaPolice & Indian Army Communication Department. 
+
 """
 
 buttons = [
