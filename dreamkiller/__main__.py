@@ -90,18 +90,19 @@ If haven't heard just Look here. KkArmy is a team Social Media Friendship Gang o
 We always Tries to bring Forward a lot of ideas with Tottaly positive and all the members are Honourably considered as One of our Family Member.
 
 ☬A‌d‌m‌i‌n‌s‌ KK Army☬
- 💻  @ANIYATHIKUTTIEEDE_CHECHIKUTTI
- 👹  @FULLY_CRUAL_MIND
- 🖥  @JinnSulthan or 🕊️ @Jinn_Sulthan 
- 🎭  @im_casanova 
- 🕺  @KottayamkunjachanM88 
- 💃🏾  @Kappusz
- 🥷🏾  @L_The_Fallen_Angel
+ 💻  [@ANIYATHIKUTTIEEDE_CHECHIKUTTI](https://t.me/ANIYATHIKUTTIEEDE_CHECHIKUTTI)
+ 👹  [@FULLY_CRUAL_MIND](1https://t.me/FULLY_CRUAL_MIND)
+ 🖥  [@JinnSulthan or 🕊️ @Jinn_Sulthan](https://t.me/Jinn_Sulthan)
+ 🎭  [@im_casanova](https://t.me/im_casanova)
+ 🕺  [@KottayamkunjachanM88](https://t.me/KottayamkunjachanM88)
+ 💃🏾  [@Kappusz](https://t.me/Kappusz)
+ ❌  [@L_The_Fallen_Angel](https://t.me/L_The_Fallen_Angel)
  
  ☬Important (Don't Forget)☬
 Also We have both Channel and Group For Reporting Complaints about Abusing/Harrsment even though whatever issues Facing on Social Media. 
 The channels and Groups of us are Connected with CyberDome, KeralaPolice & Indian Army Communication Department. 
 
+You can see what can i do for you with /help
 """
 
 buttons = [
@@ -123,7 +124,7 @@ buttons = [
         InlineKeyboardButton(text="⚙️ ʜᴇʟᴩ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
     ],
     [
-        InlineKeyboardButton(text="💃Music💃", callback_data="_Music_"),
+        InlineKeyboardButton(text="💃Music💃", callback_data="Music_"),
     ],
 ]
 
@@ -442,25 +443,6 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                 ]
             ),
         )
-@run_async
-def Fallen_music_callback(update: Update, context: CallbackContext):
-    query = update.callback_query
-    if query.data == "_Music_":
-        uptime = get_readable_time((time.time() - StartTime))
-        query.message.edit_text(
-            text=f"*Hey,We have extraordinary Music player bot with following functions and characteristics\n 💞 0% Lag\n ❌ Clean and beauty chat\n 💪 24Hrs Assistance help\n 💯 100% secure\nWhat Can u do ?\n add @Stenzle_MariaMbot and ask to @BE_HALF_OF_KRISHNA for join assistant.then promote @Stenzle_MariaMbot as admin.\n 🤳Let's play Laggless High quality music on Vc",
-            parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                    [
-                        InlineKeyboardButton(
-                            text="sᴜᴩᴩᴏʀᴛ", callback_data="fallen_support"
-                        ),
-                     ],
-                 ]
-               ),
-             )          
                         
     elif query.data == "fallen_support":
         query.message.edit_text(
@@ -525,6 +507,47 @@ And suing [SQlalchemy](https://www.sqlalchemy.org) and [Mongo](https://cloud.mon
             ),
         )
     elif query.data == "source_back":
+        first_name = update.effective_user.first_name
+        query.message.edit_text(
+            PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
+            reply_markup=InlineKeyboardMarkup(buttons),
+            parse_mode=ParseMode.MARKDOWN,
+            timeout=60,
+            disable_web_page_preview=False,
+        )
+@run_async
+def Music_about_callback(update: Update, context: CallbackContext):
+    query = update.callback_query
+    if query.data == "Music_":
+        query.message.edit_text(
+            text=f"""
+*Hey, this is {BOT_NAME},
+A powerful telegram group management bot.*
+We have an extra ordinary Music Bot on Telegram ,her Name is [《ᴤᴛᴲᴎᴣᴌᴇ᚛♫-𝄞-♬᚜ᴹᴀᴙᴉᴀ》](https://t.me/Stenzle_MariaMbot). 
+she have 
+           🤜🤛  No lag And struck 
+           🤜🤛  Keep Clean and Calm chat
+           🤜🤛  24 hrs assistance 
+           🤜🤛  New inventiome
+           🤜🤛  Gban Facilities 
+           🤜🤛  welcome Facilities 
+           🤜🤛  Call Recorder Facilities 
+ If you want to add this Music bot on your Group , then pls ask to 
+   [heaven_Hater](https://t.me/kk_heaven_hater)
+[കൃഷ്ണ തുളസി](https://t.me/BE_HALF_OF_KRISHNA)
+
+ OUR 🏘HOME :- @KanimangalamKovilakam
+
+ OUR🛡 Fed     :- @kk_army_log
+©2022-2023 @KanimangalamKovilakam, All rights reserved.
+""",
+            parse_mode=ParseMode.MARKDOWN,
+            disable_web_page_preview=True,
+            reply_markup=InlineKeyboardMarkup(
+                [[InlineKeyboardButton(text="🔙 ʙᴀᴄᴋ", callback_data="Music_back")]]
+            ),
+        )
+       elif query.data == "Music_back":
         first_name = update.effective_user.first_name
         query.message.edit_text(
             PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
@@ -814,7 +837,7 @@ def main():
         try:
             dispatcher.bot.sendAnimation(
                 f"@{SUPPORT_CHAT}",
-                animation="https://telegra.ph/file/0e29f38c37b2bdbf54b7d.jpg",
+                animation="http://telegra.ph/file/9371a4ca377490eb21bfe.jpg",
                 caption=f"""
 **{BOT_NAME} is alive baby**
 
@@ -847,10 +870,13 @@ def main():
     source_callback_handler = CallbackQueryHandler(
         Source_about_callback, pattern=r"source_"
     )
+    Music_callback_handler = CallbackQueryHandler(
+        Music_about_callback, pattern=r"Music_"
+    )
 
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
-
+    dispatcher.add_handler(Music_handler)
     dispatcher.add_handler(test_handler)
     dispatcher.add_handler(start_handler)
     dispatcher.add_handler(help_handler)
