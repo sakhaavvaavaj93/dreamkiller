@@ -1,18 +1,19 @@
+import dreamkiller.modules.sql.blacklistusers_sql as sql
+from dreamkiller import ALLOW_EXCL
+from dreamkiller import DEV_USERS, DRAGONS, DEMONS, TIGERS, WOLVES
+
+from telegram import Update
+from telegram.ext import CommandHandler, MessageHandler, RegexHandler, Filters
 from pyrate_limiter import (
     BucketFullException,
     Duration,
+    RequestRate,
     Limiter,
     MemoryListBucket,
-    RequestRate,
 )
-from telegram import Update
-from telegram.ext import CommandHandler, Filters, MessageHandler, RegexHandler
-
-import dreamkiller.modules.sql.blacklistusers_sql as sql
-from dreamkiller import ALLOW_EXCL, DEMONS, DEV_USERS, DRAGONS, TIGERS, WOLVES
 
 if ALLOW_EXCL:
-    CMD_STARTERS = ("/", "!", "?", ".", "~")
+    CMD_STARTERS = ("/", "!")
 else:
     CMD_STARTERS = ("/",)
 
@@ -136,5 +137,3 @@ class CustomMessageHandler(MessageHandler):
         def check_update(self, update):
             if isinstance(update, Update) and update.effective_message:
                 return self.filters(update)
-
-            # done
