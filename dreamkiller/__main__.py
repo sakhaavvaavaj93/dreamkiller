@@ -121,7 +121,7 @@ buttons = [
         InlineKeyboardButton(text="🚑 sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
-        InlineKeyboardButton(text="⚙️ ʜᴇʟᴩ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_back"),
+        InlineKeyboardButton(text="⚙️ ʜᴇʟᴩ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_module"),
     ],
     [
         InlineKeyboardButton(text="💃Music💃", callback_data="Music_"),
