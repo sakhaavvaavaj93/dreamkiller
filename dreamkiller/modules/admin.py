@@ -219,6 +219,9 @@ def promote(update: Update, context: CallbackContext) -> str:
             can_invite_users=bot_member.can_invite_users,
             can_restrict_members=bot_member.can_restrict_members,
             can_pin_messages=bot_member.can_pin_messages,
+            can_Add_New_Admins=bot_member.Add_New_Admins,
+            can_Manage_Livestreams=bot_member.Manage_Livestreams,
+            can_Invite_Users_via_Link=bot_member.Invite_Users_via_Link
         )
     except BadRequest as err:
         if err.message == "User_not_mutual_contact":
