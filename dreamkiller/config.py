@@ -17,9 +17,9 @@ class Config(object):
     # REQUIRED
     #Login to https://my.telegram.org and fill in these slots with the details given by it
 
-    API_ID = 12345   # integer value, dont use ""
-    API_HASH = "awew"
-    TOKEN = "wow"  #This var used to be API_KEY but it is now TOKEN, adjust accordingly.
+    API_ID = 1480988   # integer value, dont use ""
+    API_HASH = "be76b2fd25b50222b0e1eee141d6a259"
+    TOKEN = "5487074903:AAFmMGRsLFPnvKicjZI5giVtivmjrXtr2vY"  #This var used to be API_KEY but it is now TOKEN, adjust accordingly.
     OWNER_ID = 5414162824  # If you dont know, run the bot and do /id in your private chat with it, also an integer
     OWNER_USERNAME = "FULLY_CRUAL_MIND"
     SUPPORT_CHAT = 'KanimangalamKovilakam'  #Your own group for support, do not add the @
@@ -34,7 +34,7 @@ class Config(object):
     URL = None
     SPAMWATCH_API = ""  # go to support.spamwat.ch to get key -
     SPAMWATCH_SUPPORT_CHAT = "@SpamWatchSupport"
-    BOT_ID = "1913023890"
+    BOT_ID = "5487074903"
     
     DRAGONS = get_user_list('elevated_users.json', 'sudos')
 
