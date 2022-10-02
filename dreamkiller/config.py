@@ -21,6 +21,7 @@ class Config(object):
     API_HASH = "be76b2fd25b50222b0e1eee141d6a259"
     TOKEN = "5487074903:AAFmMGRsLFPnvKicjZI5giVtivmjrXtr2vY"  #This var used to be API_KEY but it is now TOKEN, adjust accordingly.
     OWNER_ID = 5414162824  # If you dont know, run the bot and do /id in your private chat with it, also an integer
+    ASSIST_ID = ""  # music assistant id
     OWNER_USERNAME = "FULLY_CRUAL_MIND"
     SUPPORT_CHAT = 'KanimangalamKovilakam'  #Your own group for support, do not add the @
     UPDATES_CHANNEL = 'STENZLE_BAN_LOGS' #Your own channel for Updates of bot, Do not add @
