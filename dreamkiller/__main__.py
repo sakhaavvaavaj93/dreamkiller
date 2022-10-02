@@ -35,6 +35,7 @@ from dreamkiller import (
     DONATION_LINK,
     LOGGER,
     OWNER_ID,
+    ASSIST_ID,
     PORT,
     START_IMG,
     SUPPORT_CHAT,
@@ -125,6 +126,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="💃Music💃", callback_data="Music_"),
+        InlineKeyboardButton(text="🧑🏻‍💻 ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={ASSIST_ID}"),
     ],
 ]
 
