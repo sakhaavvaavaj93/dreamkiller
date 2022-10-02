@@ -518,7 +518,7 @@ And suing [SQlalchemy](https://www.sqlalchemy.org) and [Mongo](https://cloud.mon
             disable_web_page_preview=False,
         )
 @run_async
-def music_callback(update: Update, context: CallbackContext):
+def music_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "music_":
         query.message.edit_text(
@@ -871,12 +871,13 @@ def main():
         Source_about_callback, pattern=r"source_"
     )
     music_callback_handler = CallbackQueryHandler(
-        music_callback, pattern=r"music_"
+        music_about_callback, pattern=r"music_"
     )
 
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
-    dispatcher.add_handler(music_callback_handler)
+    dispatcher.add_handler(music_about_callback_handler)
+    dispatcher.add_handler(music_handler)
     dispatcher.add_handler(test_handler)
     dispatcher.add_handler(start_handler)
     dispatcher.add_handler(help_handler)
