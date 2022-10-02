@@ -458,7 +458,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                             text="sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"
                         ),
                         InlineKeyboardButton(
-                            text="ᴜᴩᴅᴀᴛᴇs", url=f"https://t.me/STENZLE_BAN_LOGS"
+                            text="ᴜᴩᴅᴀᴛᴇs", url=f"https://t.me/STENZLE_BAN_LOGS01"
                         ),
                     ],
                     [
@@ -467,7 +467,7 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
                         ),
                         InlineKeyboardButton(
                             text="ɢɪᴛʜᴜʙ",
-                            callback_data="https://github.com/Rachit-Pal",
+                            callback_data="https://github.com/sakhaavvaavaj93",
                         ),
                     ],
                     [
@@ -486,58 +486,22 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
             disable_web_page_preview=False,
         )
 
-
-@run_async
-def Source_about_callback(update: Update, context: CallbackContext):
-    query = update.callback_query
-    if query.data == "source_":
-        query.message.edit_text(
-            text=f"""
-*Hey, this is {BOT_NAME},
-A powerful telegram group management bot.*
-
-Written in Python with the help of
-[Telethon](https://github.com/LonamiWebs/Telethon) • [Pyrogram](https://github.com/pyrogram/pyrogram) • [PTB](https://github.com/python-telegram-bot/python-telegram-bot)
-And suing [SQlalchemy](https://www.sqlalchemy.org) and [Mongo](https://cloud.mongodb.com) as Database.
-
-©2022-2023 @StrawhatNetwork, All rights reserved.
-""",
-            parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="🔙 ʙᴀᴄᴋ", callback_data="source_back")]]
-            ),
-       )
-    elif query.data == "source_back":
-        first_name = update.effective_user.first_name
-        query.message.edit_text(
-            PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
-            reply_markup=InlineKeyboardMarkup(buttons),
-            parse_mode=ParseMode.MARKDOWN,
-            timeout=60,
-            disable_web_page_preview=False,
-        )
 @run_async
 def music_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "music_":
         query.message.edit_text(
-            text=f"""*Hey*,this is {BOT_NAME},A powerful telegram group management bot.We have an extra ordinary Music Bot on Telegram ,her Name is [《ᴤᴛᴲᴎᴣᴌᴇ᚛♫-𝄞-♬᚜ᴹᴀᴙᴉᴀ》](https://t.me/Stenzle_MariaMbot). 
-she have following features",
-           🤜🤛  No lag And struck
-           🤜🤛  Keep Clean and Calm chat
-           🤜🤛  24 hrs assistance 
-           🤜🤛  New inventions
-           🤜🤛  Gban Facilities 
-           🤜🤛  welcome Facilities 
-           🤜🤛  Call Recorder Facilities 
- If you want to add this Music bot on your Group , then pls ask to 
-  [heaven_Hater](https://t.me/kk_heaven_hater)
-  [കൃഷ്ണ തുളസി](https://t.me/KRISHNA_THULSI)
-OUR 🏘HOME :- @KanimangalamKovilakam
-OUR🛡 Fed     :- @kk_army_log
-©2022-2023 @KanimangalamKovilakam, All rights reserved.
-""",
+          text=f"""**
+『It's a Music bot without lag and struck .
+  It's a official Music and Group Manager bot of @KanimangalamKovilakam 
+Nb : Bot and Userbot are locked by owner ,
+     who wish to add this bot to your group,
+     then , contact @kk_heaven_hater』
+OUR 🏘 HOME :- @KanimangalamKovilakam
+OUR 🛡 Fed  :- @kk_army_log , @kk_warrior
+©2022-2023 @KanimangalamKovilakam, All rights reserved
+**"""
+
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
