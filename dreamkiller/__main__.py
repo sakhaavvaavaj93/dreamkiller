@@ -118,14 +118,14 @@ buttons = [
         InlineKeyboardButton(text="🧑🏻‍💻 ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"),
     ],
     [
-        InlineKeyboardButton(text="📰 ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/STENZLE_BAN_LOGS"),
+        InlineKeyboardButton(text="📰 ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/{UPDATES_CHANNEL}"),
         InlineKeyboardButton(text="🚑 sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
         InlineKeyboardButton(text="⚙️ ʜᴇʟᴩ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_module"),
     ],
     [
-        InlineKeyboardButton(text="💃Music💃", callback_data="Music_"),
+        InlineKeyboardButton(text="💃Music💃", callback_data="music_"),
         InlineKeyboardButton(text="𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃", url=f"tg://user?id={ASSIST_ID}"),
     ],
 ]
