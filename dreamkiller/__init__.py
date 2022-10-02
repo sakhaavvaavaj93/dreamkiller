@@ -72,6 +72,7 @@ if ENV:
 
     API_ID = os.environ.get("API_ID", None)
     API_HASH = os.environ.get("API_HASH", None)
+    ASSIST_ID = int(os.environ.get("ASSIST_ID", None))
     NO_LOAD = os.environ.get("NO_LOAD", "translation").split()
     URL = os.environ.get("URL", "")  # Does not contain token
     REPOSITORY = os.environ.get("REPOSITORY", "")
