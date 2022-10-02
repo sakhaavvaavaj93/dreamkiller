@@ -522,7 +522,7 @@ def music_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "music_":
         query.message.edit_text(
-            text=f"*Hey*,this is {BOT_NAME},A powerful telegram group management bot.We have an extra ordinary Music Bot on Telegram ,her Name is [《ᴤᴛᴲᴎᴣᴌᴇ᚛♫-𝄞-♬᚜ᴹᴀᴙᴉᴀ》](https://t.me/Stenzle_MariaMbot). 
+            text=f"""*Hey*,this is {BOT_NAME},A powerful telegram group management bot.We have an extra ordinary Music Bot on Telegram ,her Name is [《ᴤᴛᴲᴎᴣᴌᴇ᚛♫-𝄞-♬᚜ᴹᴀᴙᴉᴀ》](https://t.me/Stenzle_MariaMbot). 
 she have following features",
            🤜🤛  No lag And struck
            🤜🤛  Keep Clean and Calm chat
@@ -537,7 +537,7 @@ she have following features",
 OUR 🏘HOME :- @KanimangalamKovilakam
 OUR🛡 Fed     :- @kk_army_log
 ©2022-2023 @KanimangalamKovilakam, All rights reserved.
-",
+""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
