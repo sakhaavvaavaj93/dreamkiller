@@ -548,7 +548,7 @@ she have
             reply_markup=InlineKeyboardMarkup(
                 [
                  [InlineKeyboardButton(text="🔙 ʙᴀᴄᴋ", callback_data="Music_back")],
-                 [InlineKeyboardButton(text="ADD MUSIC BOT", url=f"https://t.me/Stenzle_MariaMbot?startgroup=true)]
+                 [InlineKeyboardButton(text="ADD MUSIC BOT", url=f"https://t.me/Stenzle_MariaMbot?startgroup=true")]
                 ]
             ),
         )
