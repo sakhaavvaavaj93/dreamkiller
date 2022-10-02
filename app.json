@@ -24,6 +24,11 @@
          "required": true,
          "value": ""
       },
+      "ASSIST_ID": {
+         "description": "Your bot token. Get one from @BotFather",
+         "required": true,
+         "value": ""
+      },
       "API_ID": {
          "description": "Get API_ID from my.telegram.org, used for telethon based modules.",
          "required": true,
