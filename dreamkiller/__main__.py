@@ -91,7 +91,7 @@ If haven't heard just Look here. KkArmy is a team Social Media Friendship Gang o
 We always Tries to bring Forward a lot of ideas with Tottaly positive and all the members are Honourably considered as One of our Family Member.
 
 ☬A‌d‌m‌i‌n‌s‌ KK Army☬
- 💻  [@ANIYATHIKUTTIEEDE_CHECHIKUTTI](https://t.me/ANIYATHIKUTTIEEDE_CHECHIKUTTI)
+ 💞  [@KRISHNA_THULSI](https://t.me/KRISHNA_THULSI)
  👹  [@FULLY_CRUAL_MIND](1https://t.me/FULLY_CRUAL_MIND)
  🖥  [@JinnSulthan or 🕊️ @Jinn_Sulthan](https://t.me/Jinn_Sulthan)
  🎭  [@im_casanova](https://t.me/im_casanova)
