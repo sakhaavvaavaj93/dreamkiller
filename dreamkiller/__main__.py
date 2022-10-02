@@ -92,7 +92,7 @@ We always Tries to bring Forward a lot of ideas with Tottaly positive and all th
 
 ☬A‌d‌m‌i‌n‌s‌ KK Army☬
  💞  [@KRISHNA_THULSI](https://t.me/KRISHNA_THULSI)
- 👹  [@FULLY_CRUAL_MIND](1https://t.me/FULLY_CRUAL_MIND)
+ 👹  [@FULLY_CRUAL_MIND](https://t.me/FULLY_CRUAL_MIND)
  🖥  [@JinnSulthan or 🕊️ @Jinn_Sulthan](https://t.me/Jinn_Sulthan)
  🎭  [@im_casanova](https://t.me/im_casanova)
  🕺  [@KottayamkunjachanM88](https://t.me/KottayamkunjachanM88)
@@ -125,8 +125,8 @@ buttons = [
         InlineKeyboardButton(text="⚙️ ʜᴇʟᴩ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_module"),
     ],
     [
-        [InlineKeyboardButton(text="💃Music💃", callback_data="Music_")],
-        [InlineKeyboardButton(text="𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃", url=f"tg://user?id={ASSIST_ID}")]
+        InlineKeyboardButton(text="💃Music💃", callback_data="Music_"),
+        InlineKeyboardButton(text="𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃", url=f"tg://user?id={ASSIST_ID}"),
     ],
 ]
 
