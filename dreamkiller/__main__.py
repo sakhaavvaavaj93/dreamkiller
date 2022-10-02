@@ -537,7 +537,7 @@ she have following features",
 OUR 🏘HOME :- @KanimangalamKovilakam
 OUR🛡 Fed     :- @kk_army_log
 ©2022-2023 @KanimangalamKovilakam, All rights reserved.
-""",
+",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
