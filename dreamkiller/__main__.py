@@ -491,15 +491,15 @@ def music_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "music_":
         query.message.edit_text(
-          text=f"""**
-『It's a Music bot without lag and struck .
-  It's a official Music and Group Manager bot of @KanimangalamKovilakam 
+          text=f"""***Hey, this is {BOT_NAME}*",
+『It's a Music bot without lag and struck,
+  It's a official Music and Group Manager bot of @KanimangalamKovilakam,
 Nb : Bot and Userbot are locked by owner ,
      who wish to add this bot to your group,
      then , contact @kk_heaven_hater』
-OUR 🏘 HOME :- @KanimangalamKovilakam
-OUR 🛡 Fed  :- @kk_army_log , @kk_warrior
-©2022-2023 @KanimangalamKovilakam, All rights reserved
+OUR 🏘 HOME :- @KanimangalamKovilakam,
+OUR 🛡 Fed  :- @kk_army_log , @kk_warrior,
+©2022-2023 @KanimangalamKovilakam, All rights reserved,
 **"""
 
             parse_mode=ParseMode.MARKDOWN,
