@@ -125,8 +125,8 @@ buttons = [
         InlineKeyboardButton(text="⚙️ ʜᴇʟᴩ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_module"),
     ],
     [
-        InlineKeyboardButton(text="💃Music💃", callback_data="Music_"),
-        InlineKeyboardButton(text="𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃", url=f"tg://user?id={ASSIST_ID}"),
+        [InlineKeyboardButton(text="💃Music💃", callback_data="Music_")],
+        [InlineKeyboardButton(text="𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃", url=f"tg://user?id={ASSIST_ID}")]
     ],
 ]
 
@@ -546,8 +546,10 @@ she have
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="🔙 ʙᴀᴄᴋ", callback_data="Music_back"),
-                  InlineKeyboardButton(text="ADD MUSIC BOT", url=f"https://t.me/Stenzle_MariaMbot?startgroup=true),]]
+                [
+                 [InlineKeyboardButton(text="🔙 ʙᴀᴄᴋ", callback_data="Music_back")],
+                 [InlineKeyboardButton(text="ADD MUSIC BOT", url=f"https://t.me/Stenzle_MariaMbot?startgroup=true)]
+                ]
             ),
         )
     elif query.data == "Music_back":
