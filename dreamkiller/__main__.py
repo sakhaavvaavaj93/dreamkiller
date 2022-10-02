@@ -876,7 +876,7 @@ def main():
         Source_about_callback, pattern=r"source_"
     )
     Music_callback_handler = CallbackQueryHandler(
-        Music_about_callback, pattern=r"Music_"
+        Music_callback, pattern=r"Music_"
     )
 
     donate_handler = CommandHandler("donate", donate)
