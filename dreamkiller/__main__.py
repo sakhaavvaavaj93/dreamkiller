@@ -518,15 +518,13 @@ And suing [SQlalchemy](https://www.sqlalchemy.org) and [Mongo](https://cloud.mon
             disable_web_page_preview=False,
         )
 @run_async
-def music_callback(update: Update, context: CallbackContext):
+def music_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "music_":
         query.message.edit_text(
-            text=f"""
-*Hey, this is {BOT_NAME},
-A powerful telegram group management bot.*
+            text=f"""*Hey*, this is {BOT_NAME},A powerful telegram group management bot.,
 We have an extra ordinary Music Bot on Telegram ,her Name is [《ᴤᴛᴲᴎᴣᴌᴇ᚛♫-𝄞-♬᚜ᴹᴀᴙᴉᴀ》](https://t.me/Stenzle_MariaMbot). 
-she have 
+she have following features,
            🤜🤛  No lag And struck 
            🤜🤛  Keep Clean and Calm chat
            🤜🤛  24 hrs assistance 
@@ -536,7 +534,7 @@ she have
            🤜🤛  Call Recorder Facilities 
  If you want to add this Music bot on your Group , then pls ask to 
    [heaven_Hater](https://t.me/kk_heaven_hater)
-[കൃഷ്ണ തുളസി](https://t.me/BE_HALF_OF_KRISHNA)
+[കൃഷ്ണ തുളസി](https://t.me/KRISHNA_THULSI)
 
  OUR 🏘HOME :- @KanimangalamKovilakam
 
@@ -842,7 +840,7 @@ def main():
         try:
             dispatcher.bot.sendAnimation(
                 f"@{SUPPORT_CHAT}",
-                animation="http://telegra.ph/file/9371a4ca377490eb21bfe.jpg",
+                animation="http://tele.gra.ph/file/9371a4ca377490eb21bfe.jpg",
                 caption=f"""
 **{BOT_NAME} is alive baby**
 
@@ -876,7 +874,7 @@ def main():
         Source_about_callback, pattern=r"source_"
     )
     music_callback_handler = CallbackQueryHandler(
-        music_callback, pattern=r"music_"
+        music_about_callback, pattern=r"music_"
     )
 
     donate_handler = CommandHandler("donate", donate)
