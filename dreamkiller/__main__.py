@@ -906,7 +906,7 @@ def main():
 
     else:
         LOGGER.info("Using long polling.")
-        updater.start_polling(timeout=15, read_latency=4, clean=True)
+        updater.start_polling(timeout=30, read_latency=6, clean=False)
 
     if len(argv) not in (1, 3, 4):
         telethn.disconnect()
