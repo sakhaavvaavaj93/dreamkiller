@@ -126,7 +126,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(text="💃Music💃", callback_data="Music_"),
-        InlineKeyboardButton(text="🧑🏻‍💻 ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={ASSIST_ID}"),
+        InlineKeyboardButton(text="𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃", url=f"tg://user?id={ASSIST_ID}"),
     ],
 ]
 
@@ -518,7 +518,7 @@ And suing [SQlalchemy](https://www.sqlalchemy.org) and [Mongo](https://cloud.mon
             disable_web_page_preview=False,
         )
 @run_async
-def Music_about_callback(update: Update, context: CallbackContext):
+def Music_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "Music_":
         query.message.edit_text(
@@ -530,7 +530,7 @@ she have
            🤜🤛  No lag And struck 
            🤜🤛  Keep Clean and Calm chat
            🤜🤛  24 hrs assistance 
-           🤜🤛  New inventiome
+           🤜🤛  New inventions
            🤜🤛  Gban Facilities 
            🤜🤛  welcome Facilities 
            🤜🤛  Call Recorder Facilities 
@@ -546,7 +546,8 @@ she have
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
-                [[InlineKeyboardButton(text="🔙 ʙᴀᴄᴋ", callback_data="Music_back")]]
+                [[InlineKeyboardButton(text="🔙 ʙᴀᴄᴋ", callback_data="Music_back"),
+                  InlineKeyboardButton(text="ADD MUSIC BOT", url=f"https://t.me/Stenzle_MariaMbot?startgroup=true),]]
             ),
         )
     elif query.data == "Music_back":
