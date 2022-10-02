@@ -118,7 +118,7 @@ buttons = [
         InlineKeyboardButton(text="🧑🏻‍💻 ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"),
     ],
     [
-        InlineKeyboardButton(text="📰 ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/{UPDATES_CHANNEL}"),
+        InlineKeyboardButton(text="📰 ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/KK_LINKS"),
         InlineKeyboardButton(text="🚑 sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
     [
