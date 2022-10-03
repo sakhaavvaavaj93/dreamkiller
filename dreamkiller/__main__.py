@@ -113,26 +113,20 @@ buttons = [
             url=f"https://t.me/Stenzle_MariaGbot?startgroup=true",
         ),
     ],
-    [
-        InlineKeyboardButton(text="🐈 ᴀʙᴏᴜᴛ", callback_data="fallen_"),
-        InlineKeyboardButton(text="🧑🏻‍💻 ᴅᴇᴠᴇʟᴏᴩᴇʀ", url=f"tg://user?id={OWNER_ID}"),
+    [       
+        InlineKeyboardButton(text="💞CREATER💞", url=f"tg://user?id={OWNER_ID}"),
     ],
     [
-        InlineKeyboardButton(text="📰 ᴜᴘᴅᴀᴛᴇꜱ", url=f"https://t.me/KK_LINKS"),
+        InlineKeyboardButton(text="🏫 Family", url=f"https://t.me/KK_LINKS"),
         InlineKeyboardButton(text="🚑 sᴜᴩᴩᴏʀᴛ", url=f"https://t.me/{SUPPORT_CHAT}"),
-    ],
-    [
-        InlineKeyboardButton(text="⚙️ ʜᴇʟᴩ & ᴄᴏᴍᴍᴀɴᴅs", callback_data="help_module"),
-    ],
-    [
-        InlineKeyboardButton(text="💃Music💃", callback_data="music_"),
+    ],  
+    [       
         InlineKeyboardButton(text="𝙰𝚂𝚂𝙸𝚂𝚃𝙰𝙽𝚃", url=f"tg://user?id={ASSIST_ID}"),
     ],
 ]
 
 HELP_STRINGS = f"""
 *{BOT_NAME} Exclusive Features*
-
 ➲ `/start` : starts me | According to me you've already done it.
 ➲ `/help`  : available commands section.
 """
@@ -486,41 +480,6 @@ def Fallen_about_callback(update: Update, context: CallbackContext):
             disable_web_page_preview=False,
         )
 
-@run_async
-def music_about_callback(update: Update, context: CallbackContext):
-    query = update.callback_query
-    if query.data == "music_":
-        query.message.edit_text(
-          text=f"""***Hey, this is {BOT_NAME}*",
-『It's a Music bot without lag and struck,
-  It's a official Music and Group Manager bot of @KanimangalamKovilakam,
-Nb : Bot and Userbot are locked by owner ,
-     who wish to add this bot to your group,
-     then , contact @kk_heaven_hater』
-OUR 🏘 HOME :- @KanimangalamKovilakam,
-OUR 🛡 Fed  :- @kk_army_log , @kk_warrior,
-©2022-2023 @KanimangalamKovilakam, All rights reserved,
-**"""
-
-            parse_mode=ParseMode.MARKDOWN,
-            disable_web_page_preview=True,
-            reply_markup=InlineKeyboardMarkup(
-                [
-                 InlineKeyboardButton(text="🔙 ʙᴀᴄᴋ", callback_data="Music_back"),
-                 InlineKeyboardButton(text="ADD MUSIC BOT", url=f"https://t.me/Stenzle_MariaMbot?startgroup=true"),
-                ]
-            ),
-        )
-    elif query.data == "music_back":
-        first_name = update.effective_user.first_name
-        query.message.edit_text(
-            PM_START_TEXT.format(escape_markdown(first_name), BOT_NAME),
-            reply_markup=InlineKeyboardMarkup(buttons),
-            parse_mode=ParseMode.MARKDOWN,
-            timeout=60,
-            disable_web_page_preview=False,
-        )
-
 
 @run_async
 def get_help(update: Update, context: CallbackContext):
@@ -834,14 +793,9 @@ def main():
     source_callback_handler = CallbackQueryHandler(
         Source_about_callback, pattern=r"source_"
     )
-    music_callback_handler = CallbackQueryHandler(
-        music_about_callback, pattern=r"music_"
-    )
-
+    
     donate_handler = CommandHandler("donate", donate)
-    migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)
-    dispatcher.add_handler(music_about_callback_handler)
-    dispatcher.add_handler(music_handler)
+    migrate_handler = MessageHandler(Filters.status_update.migrate, migrate_chats)       
     dispatcher.add_handler(test_handler)
     dispatcher.add_handler(start_handler)
     dispatcher.add_handler(help_handler)
